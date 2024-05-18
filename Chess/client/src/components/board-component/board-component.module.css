@@ -1,0 +1,12 @@
+@import "../../styles/colors.css";
+@import "../../styles/dimensions.css";
+
+.board {
+    margin: var(--standard-margin) 0;
+    box-sizing: content-box;
+    border: var(--black-color) solid 5px;
+    overflow: hidden;
+    border-radius: var(--standard-border-radius);
+    display: flex;
+    flex-wrap: wrap;
+}

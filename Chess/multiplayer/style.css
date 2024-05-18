@@ -1,0 +1,50 @@
+body {
+    background-image: url('images/game-over.png'); /* Путь к вашему изображению */
+    background-size: cover; /* Растягиваем изображение, чтобы оно полностью покрывало задний план */
+    background-repeat: no-repeat; /* Запрещаем повторение изображения */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 15px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: white;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button {
+        width: 100%;
+        margin: 8px 0;
+    }
+}

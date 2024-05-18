@@ -1,0 +1,33 @@
+@import "../../styles/colors.css";
+
+:root {
+    --cells-in-row: 8;
+}
+
+.cell {
+    width: Calc(100%/var(--cells-in-row));
+    padding-bottom: Calc(100%/var(--cells-in-row));
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell img {
+    width: 80%;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+
+.selected {
+    background-color: var(--selected-cell-color) !important;
+}
+
+.black {
+    background-color: var(--black-color);
+}
+
+.white {
+    background-color: var(--white-color);
+}
